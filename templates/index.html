@@ -21,10 +21,10 @@
     <fieldset bordercolor="green">
     <legend>IRIS FLOWER:</legend>	    
     <form action="{{ url_for('predict')}}"method="post">
-        <p>Enter Sepal Length: <input type="text" name="sl" required></p>
-        <p>Enter Sepal Width: <input type="text" name="sw" required></p>
-        <p>Enter Petal Length: <input type="text" name="pl" required></p>
-        <p>Enter Petal Width: <input type="text" name="pw" required></p>
+        <p>Enter Sepal Length: <input type="number" name="sl" step="0.01" required></p>
+        <p>Enter Sepal Width: <input type="number" name="sw" step="0.01" required></p>
+        <p>Enter Petal Length: <input type="number" name="pl" step="0.01" required></p>
+        <p>Enter Petal Width: <input type="number" name="pw" step="0.01" required></p>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
      </fieldset>
 	    
