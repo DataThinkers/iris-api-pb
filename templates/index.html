@@ -3,7 +3,7 @@
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
   <meta charset="UTF-8">
-  <title>ML API FOR IRIS DATASET</title>
+  <title>ML API FOR IRIS FLOWER CLASSIFICATION </title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -13,17 +13,18 @@
 
 <body>
  <div class="login">
-	                       <h1>ML API FOR IRIS FLOWER  : BY PRIYANG BHATT</h1>
-       <marquee><h1 align="center"> <font color="red">Iris Flower Classfication </font></h1></marquee>
+	                       
      <!-- Main Input For Receiving Query to our ML -->
      <center>
-    <fieldset>
+	     <h1>ML API FOR IRIS FLOWER  : BY PRIYANG BHATT</h1>
+       <marquee><h1 align="center"> <font color="red">Iris Flower Classfication </font></h1></marquee>
+    <fieldset bordercolor="green">
     <legend>IRIS FLOWER:</legend>	    
     <form action="{{ url_for('predict')}}"method="post">
-        <p>Enter Sepal Length: <input type="text" name="sl",required="required"></p>
-        <p>Enter Sepal Width: <input type="text" name="sw",required="required"></p>
-        <p>Enter Petal Length: <input type="text" name="pl",required="required"></p>
-        <p>Enter Petal Width: <input type="text" name="pw",required="required"></p>
+        <p>Enter Sepal Length: <input type="text" name="sl" required></p>
+        <p>Enter Sepal Width: <input type="text" name="sw" required></p>
+        <p>Enter Petal Length: <input type="text" name="pl" required></p>
+        <p>Enter Petal Width: <input type="text" name="pw" required></p>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
      </fieldset>
 	    
