@@ -16,13 +16,17 @@
 	                       <h1>ML API FOR IRIS FLOWER  : BY PRIYANG BHATT</h1>
        <marquee><h1 align="center"> <font color="red">Iris Flower Classfication </font></h1></marquee>
      <!-- Main Input For Receiving Query to our ML -->
-     <center>	 
+     <center>
+    <fieldset>
+    <legend>IRIS FLOWER:</legend>	    
     <form action="{{ url_for('predict')}}"method="post">
         <p>Enter Sepal Length: <input type="text" name="sl",required="required"></p>
         <p>Enter Sepal Width: <input type="text" name="sw",required="required"></p>
         <p>Enter Petal Length: <input type="text" name="pl",required="required"></p>
         <p>Enter Petal Width: <input type="text" name="pw",required="required"></p>
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+     </fieldset>
+	    
     </form> 
     <center>
 
